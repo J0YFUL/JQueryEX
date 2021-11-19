@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>JQuery_Test</title>
+</head>
+<style>
+
+</style>
+<body>
+    <img src="http://placeimg.com/300/300/animals" alt="no images">
+    <div>
+        <button id="show">SHOW</button>
+        <button id="hide">HIDE</button>
+        <button id="switch">SWITCH</button>
+    </div>
+    <script>
+        // 보여주기
+        $('#show').click(function() {
+            $('img').show();
+        });
+        
+        // 숨기기
+        $('#hide').click(function() {
+            $('img').hide();
+        });
+
+        // toggle() 함수도 존재
+        $('#switch').click(function() {
+            $('img').toggle();
+        });
+    </script>
+</body>
+
+</html>
