@@ -7,17 +7,14 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>JQuery_Test</title>
 </head>
-
+<button class="btn" id="dominic">Click me</button>
 <body>
-    <p class="mary">Mary</p>
-    <p id="denis">denis</p>
-    <script>
-        $('h1').css('background-color', 'red');
 
-        $('h2, .mary, #denis').css('font-size', '50px');
+    <script>
+        $('.btn').hover(function() {
+            console.log($(this).attr('id'));
+        })
     </script>
 </body>
 
 </html>
-
-<!-- <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
