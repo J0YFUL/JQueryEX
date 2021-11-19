@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>JQuery_Test</title>
+</head>
+
+<body>
+    <div class="contents">
+
+    </div>
+    <hr>
+    <button id="add">ADD</button>
+    <script>
+        $('#add').click(function() {
+            $('.contents').append('<div class="container"><span> New Contents </span><button class="rm">Del</button></div>');
+        })
+
+        $(document).on('click', '.rm', function () {
+            $(this).parent().remove();
+        });
+    </script>
+</body>
+
+</html>
