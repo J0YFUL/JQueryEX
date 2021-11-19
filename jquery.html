@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>JQuery_Test</title>
+</head>
+
+<body>
+    <h1>HEY!!</h1>
+    <p>First JQuery Page</p>
+    <h2>Hello</h2>
+    <p class="mary">Mary</p>
+    <p id="denis">denis</p>
+    <script>
+        let data = $('p').text();
+        console.log(data);
+
+        $('h1').css('background-color', 'red');
+
+        $('h2, .mary, #denis').css('font-size', '50px');
+    </script>
+</body>
+
+</html>
+
+<!-- <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
