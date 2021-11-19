@@ -6,7 +6,11 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>JQuery_Test</title>
 </head>
-
+<style>
+    .container {
+        margin: 10px;
+    }
+</style>
 <body>
     <div class="contents">
 
@@ -18,7 +22,7 @@
             $('.contents').append('<div class="container"><span> New Contents </span><button class="rm">Del</button></div>');
         })
 
-        $(document).on('click', '.rm', function () {
+        $(document).on('click','.rm', function () {
             $(this).parent().remove();
         });
     </script>
