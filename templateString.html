@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3></h3>
+    <h2></h2>
+    <h1></h1>
+    <script>
+        let data = "Zeki"
+
+        // 문자열에 묻힘
+        $('h3').text('Hello, data brother!');
+        
+        // 가능하지만 복잡해지면 +과 열고 닫는 ''가 많아짐.
+        $('h2').text('Hello, ' + data + ' brother!');
+        
+        // 템플릿 문자열로 문자열 사이에 온전히 변수를 넣을 수 있음. h2쪽과 문법을 비교해보기
+        $('h1').text(`Hello, ${data} brother!`);
+    </script>
+</body>
+</html>
