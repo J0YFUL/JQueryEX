@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>JQuery_Test</title>
+</head>
+<style>
+    .animals div {
+        background-color: #efefef;
+        border: 1px solid silver;
+        margin: 3px;
+        padding: 5px;
+    }
+
+    .animals div.on {
+        /* 선택된 항목 강조 */
+        background-color: #999;
+        color: #fff;
+        border-color: #444;
+    }
+</style>
+
+<body>
+    <div class="animals">
+        <div>뉴칼레도니아 가고일 도마뱀붙이</div>
+        <div class="on">살찐꼬리 난장이 여우원숭이</div>
+        <div>윌리암슨 수액빨이 딱다구리</div>
+        <div>쿠비어 난장이 카이만</div>
+        <div>큰꼬리 검은 찌르레기 사촌</div>
+    </div>
+
+    <div style="text-align:center;">
+        <button type="button" onclick="gogogo()">닫기</button>
+        <button type="button" onclick="$('.animals').show()">열기</button>
+    </div>
+    <script>
+        function gogogo() {
+            $('.animals .on').removeClass('on'); // animals 클래스 요소안에 on 클래스를 찾아서 그 on 클래스 제거
+            $('.animals').hide(); // animals 클래스 요소 안보이게 하기 - display:none;
+        }
+    </script>
+</body>
+
+</html>
